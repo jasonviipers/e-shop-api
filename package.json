@@ -11,7 +11,7 @@
 		"start": "bun run src/index.ts",
 		"db:push": "drizzle-kit push",
 		"db:generate": "drizzle-kit generate:pg",
-		"prepare": "bun husky install",
+		"prepare": "husky",
 		"lint": " bunx biome format --write"
 	},
 	"dependencies": {
@@ -36,6 +36,6 @@
 	},
 	"keywords": ["E-shop", "API", "Bun", "Drizzle", "PostgreSQL"],
 	"lint-staged": {
-		"**/*.ts": ["biome format --write"]
+		"**/*.ts": ["bunx biome format --write"]
 	}
 }
